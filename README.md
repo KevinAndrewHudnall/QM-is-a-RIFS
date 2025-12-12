@@ -23,3 +23,27 @@ From the repo root:
 addpath('src');
 [S, S_log] = Simulate_QM_RIFS_Born_Sampled(30, 1e4, [0.5 0.5], 0.9, 0.6, 0.5);
 run('scripts/plot_qm_rifs_panels.m');
+
+## Using the provided dataset
+load('data/QM_is_a_RIFS_Data.mat');  % should load S and S_log (and/or parameters)
+run('scripts/plot_qm_rifs_panels.m');
+
+## Notes on Parameters
+- `maxDepth` = number of measurement steps (k)
+- `nPaths` = number of sampled histories (N)
+- `lambda_Z`, `mu_X` are likelihood weights for the two measurement settings
+- `pZ` is the probability of choosing the Z-setting at each step (else X)
+
+## Citation
+Create a file `CITATION.cff`:
+
+```yaml
+cff-version: 1.2.0
+message: "If you use this code/data, please cite the associated manuscript."
+type: software
+title: "Quantum Measurement as a Random Iterated Function System (RIFS) — code and data"
+authors:
+  - family-names: Hudnall
+    given-names: Kevin
+license: MIT
+repository-code: https://github.com/<YOUR_GITHUB_USERNAME>/<REPO_NAME>
