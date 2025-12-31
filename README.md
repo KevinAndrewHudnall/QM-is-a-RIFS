@@ -1,8 +1,8 @@
-# Quantum Measurement is a Random Iterated Function System (RIFS)
+# Quantum measurement defines a Random Iterated Function System (RIFS)
 
 This repository contains code and data supporting the figures in the manuscript:
 
-**"Quantum Measurement is a Random Iterated Function System"**  
+**"Quantum measurement defines a Random Iterated Function System"**  
 Kevin Hudnall
 
 ## Contents
